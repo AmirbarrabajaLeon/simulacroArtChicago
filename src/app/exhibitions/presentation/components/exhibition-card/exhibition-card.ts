@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
+
 import {
   MatCard,
   MatCardContent, MatCardFooter,
@@ -19,7 +21,8 @@ import {MatButton} from '@angular/material/button';
     MatCardContent,
     MatCardSubtitle,
     MatCardFooter,
-    MatButton
+    MatButton,
+    TranslatePipe
   ],
   templateUrl: './exhibition-card.html',
   styleUrl: './exhibition-card.css'

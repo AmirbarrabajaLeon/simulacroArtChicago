@@ -4,7 +4,7 @@
       Titulo de la Exposición
     </mat-card-title>
     <mat-card-subtitle>
-      Se encuentra en Galeria Nro. 1
+      {{ 'exhibition.located-at' | translate}} Galeria Nro. 1
     </mat-card-subtitle>
 
   </mat-card-header>
@@ -22,7 +22,7 @@
 
   <mat-card-footer>
     <div class="footer-content">
-      <button mat-button color="primary">Ver Detalles</button>
+      <button mat-button color="primary">{{ 'exhibition.check-details' | translate }}</button>
       <p>01/01/2024 - 31/01/2024</p>
     </div>
   </mat-card-footer>
