@@ -1,7 +1,35 @@
 mat-card {
-  width: 300px;
-  margin: 10px;
+  width: 100%;
+  max-width: 24rem;
+
+  height: 35.5rem;
+
+
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #db7093 #fff;
 }
+
+mat-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+mat-card::-webkit-scrollbar-thumb {
+  background: #db7093; /* palevioletred */
+  border-radius: 4px;
+}
+
+
+mat-card img {
+  max-height: 15rem;
+  object-fit: cover;
+}
+
 
 .footer-content{
   display: flex;

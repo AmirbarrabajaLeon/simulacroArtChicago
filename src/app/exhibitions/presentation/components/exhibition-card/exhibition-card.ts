@@ -1,4 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+
+import { Exhibition } from '../../../domain/model/exhibition.entity';
+
+import {DatePipe} from '@angular/common';
+
+
 import { TranslatePipe } from '@ngx-translate/core';
 
 import {
@@ -9,6 +15,7 @@ import {
   MatCardSubtitle,
   MatCardTitle
 } from '@angular/material/card';
+
 import {MatButton} from '@angular/material/button';
 
 @Component({
@@ -22,11 +29,12 @@ import {MatButton} from '@angular/material/button';
     MatCardSubtitle,
     MatCardFooter,
     MatButton,
-    TranslatePipe
+    TranslatePipe,
+    DatePipe
   ],
   templateUrl: './exhibition-card.html',
   styleUrl: './exhibition-card.css'
 })
 export class ExhibitionCard {
-
+  exhibition = input.required<Exhibition>();
 }

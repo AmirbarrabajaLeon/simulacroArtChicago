@@ -1,29 +1,28 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>
-      Titulo de la Exposición
+      <strong>{{ exhibition().title }}</strong>
     </mat-card-title>
     <mat-card-subtitle>
-      {{ 'exhibition.located-at' | translate}} Galeria Nro. 1
+      {{ 'exhibition.located-at' | translate}} {{ exhibition().gallery_title }}
     </mat-card-subtitle>
-
   </mat-card-header>
 
-  <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image [src]="exhibition().image_url" [alt]="exhibition().title">
 
   <mat-card-content>
     <p>
-      Descripción breve de la exposición que proporciona una visión general del contenido y los aspectos destacados de la misma.
+      {{ exhibition().short_description }}
     </p>
     <p>
-      Closed
+      <strong>{{ exhibition().status }}</strong>
     </p>
   </mat-card-content>
 
   <mat-card-footer>
     <div class="footer-content">
       <button mat-button color="primary">{{ 'exhibition.check-details' | translate }}</button>
-      <p>01/01/2024 - 31/01/2024</p>
+      <p>{{ exhibition().aic_start_at | date:'medium' }} - {{ exhibition().aic_end_at | date:'medium' }}</p>
     </div>
   </mat-card-footer>
 
