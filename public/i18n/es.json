@@ -1,0 +1,15 @@
+{
+  "toolbar": {
+    "title": "Exposiciones del Instituto de Arte de Chicago"
+  },
+
+  "exhibition": {
+    "located-at": "Ubicada en",
+    "check-details": "Ver detalles"
+  },
+
+  "footer": {
+    "rights": "Copyright © 2025 Instituto de Arte de Chicago. Todos los derechos reservados.",
+    "developed-by": "Desarrollado por"
+  }
+}

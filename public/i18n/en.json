@@ -1,0 +1,15 @@
+{
+  "toolbar": {
+    "title": "Art Institute of Chicago Exhibitions"
+  },
+
+  "exhibition": {
+    "located-at": "Located at",
+    "check-details": "Check details"
+  },
+
+  "footer": {
+    "rights": "Copyright © 2025 Art Institute of Chicago. All rights reserved.",
+    "developed-by": "Developed by"
+  }
+}
