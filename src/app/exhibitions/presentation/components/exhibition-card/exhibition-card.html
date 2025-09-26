@@ -21,7 +21,7 @@
 
   <mat-card-footer>
     <div class="footer-content">
-      <button mat-button color="primary">{{ 'exhibition.check-details' | translate }}</button>
+      <button (click)="goToLink(exhibition().web_url)" mat-button color="primary"> {{ 'exhibition.check-details' | translate }}</button>
       <p>{{ exhibition().aic_start_at | date:'medium' }} - {{ exhibition().aic_end_at | date:'medium' }}</p>
     </div>
   </mat-card-footer>

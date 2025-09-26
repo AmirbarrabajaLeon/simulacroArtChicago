@@ -37,4 +37,10 @@ import {MatButton} from '@angular/material/button';
 })
 export class ExhibitionCard {
   exhibition = input.required<Exhibition>();
+
+  goToLink(url: string) {
+    window.open(url, '_blank');
+  }
+
+  protected readonly Exhibition = Exhibition;
 }
