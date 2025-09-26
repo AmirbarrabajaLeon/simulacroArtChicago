@@ -1,0 +1,10 @@
+<mat-grid-list cols="4" rowHeight=39rem gutterSize="10px" style="margin-bottom: 100px;">
+  @for (exhibition of exhibitions(); track exhibition.title) {
+    <mat-grid-tile>
+      <app-exhibition-card [exhibition]="exhibition"/>
+    </mat-grid-tile>
+  }
+</mat-grid-list>
+
+
+
