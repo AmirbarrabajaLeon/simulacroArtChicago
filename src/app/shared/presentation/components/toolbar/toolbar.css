@@ -3,12 +3,19 @@
 }
 
 mat-toolbar{
-  background: palevioletred;
-  color: white;
+  background-color: rgba(219, 112, 147, 0.5); /* palevioletred semi-transparente */
+  backdrop-filter: blur(10px); /* Aplica desenfoque */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);  color: white;
+
   gap: 1rem;
 
   height: 5rem;
   padding: 0 2rem 0 2rem;
+
+  position: fixed;
+  top: 0;
+
+  z-index: 100;
 }
 
 .mat-spacer{
