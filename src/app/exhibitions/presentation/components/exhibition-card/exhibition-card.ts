@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 import { Exhibition } from '../../../domain/model/exhibition.entity';
 
