@@ -1,7 +1,7 @@
 export interface ExhibitionsResponse {
   status: string;
   totalResults: number;
-  exhibitions: ExhibitionResource[];
+  data: ExhibitionResource[];
 }
 
 export interface ExhibitionResource {
